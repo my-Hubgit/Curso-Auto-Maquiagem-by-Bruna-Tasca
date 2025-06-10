@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Auto Maquiagem Profissional Online - Bruna Tasca | Aprenda a se maquiar como uma expert!</title>
+    <link rel="icon" href="/img/ico/favicon.ico" type="image/x-icon">
+
+
+    <meta name="description" content="Aprenda automaquiagem profissional em casa com a Bruna Tasca! Eleve sua autoestima, maquiando-se com produtos que já tem. Curso completo com técnicas para o dia a dia, eventos, pele oleosa, glitter, e muito mais. Inicie sua transformação hoje!">
+    <meta name="keywords" content="automaquiagem, curso de maquiagem, maquiagem profissional, Bruna Tasca, maquiagem em casa, autoestima, maquiagem para iniciantes, como se maquiar, tutorial de maquiagem, maquiagem para eventos, pele oleosa, maquiagem fácil, cílios postiços, delineado, sobrancelha, kit de maquiagem">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Curso Auto Maquiagem Profissional Online - Bruna Tasca">
+    <meta property="og:description" content="Aprenda automaquiagem profissional em casa com a Bruna Tasca! Eleve sua autoestima e domine a arte da maquiagem.">
+    <meta property="og:image" content="URL_DA_IMAGEM_DE_COMPARTILHAMENTO_DO_CURSO.jpg"> <meta property="og:url" content="URL_DA_SUA_PAGINA.html"> <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variáveis de Cores (Inspirado em tons sóbrios e elegantes com um toque de cor) */
+        :root {
+            --dark-gray: #2c2c2c; /* Fundo mais escuro */
+            --medium-gray: #3a3a3a; /* Fundo médio */
+            --light-gray-text: #cccccc; /* Texto em cinza claro */
+            --white-text: #ffffff; /* Texto branco */
+            --accent-pink: #f06292; /* Rosa para destaque (maquiagem) */
+            --accent-pink-hover: #d8436b; /* Rosa mais escuro para hover */
+            --border-color: #555555; /* Borda sutil */
+            --shadow-color: rgba(0, 0, 0, 0.4);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-gray); /* Fundo principal */
+            color: var(--light-gray-text);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Imagem de fundo sutil que se camufla */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/1920x1080/444444/222222?text=Fundo+Sutil+Maquiagem'); /* Substitua pela URL da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1; /* Transparência para camuflar */
+            z-index: -1; /* Fica atrás do conteúdo */
+            pointer-events: none; /* Garante que não interfira com cliques */
+        }
+
+        .container {
+            max-width: 1100px; /* Largura um pouco maior para o layout de duas colunas */
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 40px; /* Espaço entre as colunas */
+        }
+
+        header {
+            background-color: var(--medium-gray);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            border-bottom: 3px solid var(--accent-pink);
+        }
+
+        .logo h1 {
+            font-family: 'Playfair Display', serif; /* Fonte elegante para o título */
+            color: var(--accent-pink);
+            font-size: 2.8em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        .logo p {
+            font-size: 1.2em;
+            color: var(--white-text);
+            margin: 5px 0 0;
+            font-weight: 300;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap; /* Permite quebrar em colunas em telas menores */
+            gap: 40px;
+            padding: 40px 20px;
+            align-items: flex-start; /* Alinha o topo das colunas */
+        }
+
+        .sidebar {
+            flex: 1; /* Ocupa 1 parte da largura */
+            min-width: 280px; /* Largura mínima para a sidebar */
+            background-color: var(--medium-gray);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .sidebar img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--shadow-color);
+            margin-bottom: 20px;
+            border: 3px solid var(--accent-pink); /* Moldura para destaque */
+        }
+
+        .sidebar h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-pink);
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .sidebar p {
+            font-size: 1em;
+            color: var(--light-gray-text);
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .course-description {
+            flex: 2; /* Ocupa 2 partes da largura */
+            min-width: 350px; /* Largura mínima para a descrição do curso */
+            background-color: var(--medium-gray);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .course-description h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: var(--accent-pink);
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .course-description p {
+            font-size: 1.1em;
+            color: var(--light-gray-text);
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .course-description strong {
+            color: var(--white-text);
+        }
+
+        .cta-button {
+            display: block; /* Ocupa a largura total da coluna */
+            background-color: var(--accent-pink);
+            color: var(--white-text);
+            padding: 18px 30px;
+            border-radius: 50px;
+            font-size: 1.6em;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 20px rgba(240, 98, 146, 0.5);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--accent-pink-hover);
+            margin: 30px auto 0; /* Centraliza o botão */
+            width: fit-content; /* Ajusta a largura ao conteúdo */
+        }
+
+        .cta-button:hover {
+            background-color: var(--accent-pink-hover);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 12px 25px rgba(240, 98, 146, 0.7);
+            border-color: var(--accent-pink);
+        }
+
+        .cta-button::before {
+            content: '✨'; /* Ícone de brilho */
+            position: absolute;
+            top: 50%;
+            left: -10%;
+            font-size: 1.2em;
+            opacity: 0;
+            transform: translateY(-50%) rotate(0deg);
+            transition: all 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            opacity: 1;
+            left: 5%;
+            transform: translateY(-50%) rotate(360deg);
+        }
+
+        .cta-button::after {
+            content: '💄'; /* Ícone de batom */
+            position: absolute;
+            top: 50%;
+            right: -10%;
+            font-size: 1.2em;
+            opacity: 0;
+            transform: translateY(-50%) rotate(0deg);
+            transition: all 0.5s ease;
+        }
+
+        .cta-button:hover::after {
+            opacity: 1;
+            right: 5%;
+            transform: translateY(-50%) rotate(-360deg);
+        }
+
+        .course-modules {
+            background-color: var(--medium-gray);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            margin-top: 40px;
+            border: 1px solid var(--border-color);
+            width: 100%; /* Ocupa a largura total da seção */
+        }
+
+        .course-modules h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-pink);
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .module-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .module-item {
+            background-color: var(--dark-gray);
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px var(--shadow-color);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .module-item:hover {
+            transform: translateY(-3px);
+            background-color: #f152cc72; /* Cinza um pouco mais claro no hover */
+        }
+
+        .module-item strong {
+            display: block;
+            font-size: 1.3em;
+            color: var(--accent-pink);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .module-item ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+            color: var(--light-gray-text);
+        }
+
+        .module-item ul li {
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--dark-gray);
+            color: var(--light-gray-text);
+            font-size: 0.9em;
+            margin-top: 50px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Responsividade */
+        @media (max-width: 900px) {
+            .container, .main-content {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+            .sidebar, .course-description {
+                flex: none; /* Remove flex grow */
+                width: 100%; /* Ocupa a largura total */
+                min-width: unset;
+                margin-bottom: 0; /* Remove margem extra entre eles */
+            }
+            .logo h1 {
+                font-size: 2.2em;
+            }
+            .course-description h1 {
+                font-size: 2em;
+            }
+            .cta-button {
+                font-size: 1.4em;
+                padding: 15px 25px;
+            }
+            .course-modules h2 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .logo h1 {
+                font-size: 1.8em;
+            }
+            .hero-section h1 {
+                font-size: 1.8em;
+            }
+            .hero-section p {
+                font-size: 1em;
+            }
+            .cta-button {
+                font-size: 1.2em;
+                padding: 12px 20px;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+
+body {
+            /* Desabilita a seleção de texto */
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+    </style>
+<script>
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+    alert ("Botão desabilitado!");// desabilita o botão direito do mouso
+  });
+  document.addEventListener('copy', function(event) {
+    event.clipboardData.setData('text/plain', 'Cópia não permitida.');
+    event.preventDefault();
+    alert ("Copia não permitida"); // desabilita a marcação de texto
+  });
+</script>
+</head>
+
+<body>
+    <header>
+        <div class="container" style="display: block; text-align: center;"> <div class="logo">
+                <h1>Auto Maquiagem Profissional</h1> 
+                <p>by Bruna Tasca</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <img src="img/b1.jpg" alt="Bruna Tasca, maquiadora profissional e sua mentora">
+            <h2>Bruna Tasca</h2>
+            <p>
+                Bruna Tasca é uma **maquiadora experiente e apaixonada** com mais de 12 anos de dedicação à arte da maquiagem. Em mais de uma década, além de realizar milhares de atendimentos que realçaram a beleza e confiança de inúmeras mulheres, ela se dedicou a uma missão ainda maior: **ajudar centenas de mulheres a alcançarem um resultado profissional se maquiando em casa.**
+            </p>
+            <p>
+                Reconhecida por sua didática clara e objetiva, Bruna também ministra cursos de maquiagem profissional, **transformando a vida de muitas alunas** que passaram a ter a maquiagem como sua principal fonte de renda. Ela sabe o que é preciso para começar do zero e chegar ao sucesso.
+            </p>
+            <p>
+                Atendendo a **inúmeros pedidos** de mulheres que desejavam aprender seus segredos de forma acessível, Bruna disponibilizou este **Curso de Auto Maquiagem Online**. Agora, mulheres do mundo todo podem aprender, de forma **rápida e didática**, e usando os produtos que já têm em casa, a se maquiar como uma verdadeira expert.
+            </p>
+            <p>
+                Seja para o **dia-a-dia**, para uma **noite romântica**, ou para um **grande evento**, este curso é **perfeito para você** que busca não apenas uma maquiagem impecável, mas também um **aumento significativo da sua autoestima e confiança!**
+            </p>
+        </aside>
+
+        <section class="course-description">
+            <h1>Transforme Sua Autoestima e Aprenda a Se Maquiar Como Uma Expert, do Zero!</h1>
+            <p>
+                Você se sente frustrada(o) quando tenta se maquiar e o resultado não é o esperado? Procura por "tutoriais de maquiagem para iniciantes" ou "como fazer maquiagem para o dia a dia" e se perde em tanta informação solta? Chega de perder tempo e dinheiro com produtos errados e técnicas que não funcionam para você!
+            </p>
+            <p>
+                Com o curso **"Auto Maquiagem Profissional by Bruna Tasca"**, você vai finalmente **desvendar os segredos** das maquiagens impecáveis. A Bruna, com sua vasta experiência, criou um método **simples e direto**, pensado para que você, mesmo que nunca tenha pegado em um pincel, consiga resultados **profissionais e duradouros**.
+            </p>
+            <p>
+                Este curso é a sua oportunidade de **se sentir mais bonita(o), confiante e empoderada(o)** em qualquer ocasião. Chega de se esconder ou de se sentir insegura(o) por não saber se maquiar. **Imagine-se dominando** cada técnica, escolhendo os produtos certos e criando looks que realçam a sua beleza natural.
+            </p>
+            <p>
+                **Sua jornada para uma maquiagem perfeita e uma autoestima inabalável começa aqui!**
+            </p>
+
+            <a href="https://go.hotmart.com/S100082295U" target="_blank" rel="noopener noreferrer" class="cta-button">
+                Quero Minha Transformação Agora!
+            </a>
+
+            <div class="course-modules">
+                <h2>O Que Você Vai Aprender no Curso:</h2>
+                <ul class="module-list">
+                    <li class="module-item">
+                        <strong>01 Boas Vindas</strong>
+                    </li>
+                    <li class="module-item">
+                        <strong>02 Descobrindo seu Tipo de Pele</strong>
+                        <ul>
+                            <li>Descobrindo seu Tipo de Pele</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <strong>03 Maquiagem LEVE para o Dia a Dia</strong>
+                    </li>
+                    <li class="module-item">
+                        <strong>04 Pele Resistente para Eventos de Dia</strong>
+                        <ul>
+                            <li>Aula #1 - Preparação de Pele</li>
+                            <li>Aula #2 - Correção da Pele</li>
+                            <li>Aula #3 - Iluminação e Selagem</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <strong>05 Preparação de Pele - Oleosa e Acneica</strong>
+                    </li>
+                    <li class="module-item">
+                        <strong>06 Maquiagem PROFISSIONAL Completa</strong>
+                        <ul>
+                            <li>Preparação de Pele</li>
+                            <li>Corretivo e Contorno</li>
+                            <li>Selagem da Pele</li>
+                            <li>Olhos</li>
+                            <li>Cílios Postiços e Finalização</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <strong>07 Módulo Especial</strong>
+                        <ul>
+                            <li>Olhos com Glitter</li>
+                            <li>Sobrancelha</li>
+                            <li>Cílios Postiços</li>
+                            <li>Delineados</li>
+                        </ul>
+                    </li>
+                    <li class="module-item">
+                        <strong>08 BÔNUS EXCLUSIVOS!</strong>
+                        <ul>
+                            <li>Bônus #1 - Como montar seu kit de Pincéis</li>
+                            <li>Bônus #2 - Cabelo com Babyliss</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="display: block; text-align: center;"> <p>&copy; 2025 Claudemir Sewald - Curso de Auto Maquiagem Profissional by Bruna Tasca. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    </body>
+</html>
